@@ -88,16 +88,20 @@ var upperCasedCharacters = [
   'Z'
 ];
 window.alert("Welcome to password generator")
-var prom = prompt("Choose the length of your passwords, it must be at least 8 characters short and less than 128 characters long");
+
 
 // Function to prompt user for password options
 function getPasswordOptions() {
+ 
+  var prom;
+ prompt("Choose the length of your passwords, it must be at least 8 characters short and less than 128 characters long");
 if (prom < 8 ){
-  prompt("The password is less than 8 characters");
+  alert("The password is less than 8 characters");
 } else if (prom > 128){
-  prompt("Password is greater than 128 characters");
+  alert("Password is greater than 128 characters");
 } else { alert("Great Choose")}
-return;
+while ( prom < 8 || prom > 128);
+return prom;
 };
 
 // Function for getting a random element from an array
