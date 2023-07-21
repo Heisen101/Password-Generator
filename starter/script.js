@@ -92,8 +92,10 @@ window.alert("Welcome to password generator")
 
 // Function to prompt user for password options
 function getPasswordOptions() {
-  
- var charact;
+  var lowerC;
+  var upperC;
+var numer; //will store the answer linked user choise regarding numbers
+ var charact; //variable will store the true or false answer of user when choosing type of letters, characters etc.
   var prom; //declared var to store the answer from user
   do{ //Used do while loop for first to check the imput from customer and if is false to stop the loop if not, use will get prompts comments to choose the right password length
   prom = prompt("Choose the length of your passwords, it must be at least 8 characters short and less than 128 characters long");
@@ -103,6 +105,10 @@ if (prom < 8 ){ //will execute if is true
   alert("Password is greater than 128 characters");
 }  
 else { charact = window.confirm("Click OK to confirm including special characters");
+ numer = window.confirm("Click OK to confirm including numeric characters");
+ lowerC = window.confirm("Click OK to confirm including lowercase characters");
+ upperC = window.confirm("Click OK to confirm including uppercase characters");
+
    alert("Great Choise")} }
 while ( prom < 8 || prom > 128); //will stop if this is false, will continue if is true till will be false
 return prom;
