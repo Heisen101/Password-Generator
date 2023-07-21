@@ -93,7 +93,7 @@ window.alert("Welcome to password generator")
 // Function to prompt user for password options
 function getPasswordOptions() {
  
-  var prom;
+  var prom; //declared var to store the answer fro user
   do{
   prom = prompt("Choose the length of your passwords, it must be at least 8 characters short and less than 128 characters long");
 if (prom < 8 ){
