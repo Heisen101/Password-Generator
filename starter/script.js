@@ -94,16 +94,17 @@ window.alert("Welcome to password generator")
 function getPasswordOptions() {
  
   var prom;
- prompt("Choose the length of your passwords, it must be at least 8 characters short and less than 128 characters long");
+  do{
+  prom = prompt("Choose the length of your passwords, it must be at least 8 characters short and less than 128 characters long");
 if (prom < 8 ){
   alert("The password is less than 8 characters");
 } else if (prom > 128){
   alert("Password is greater than 128 characters");
-} else { alert("Great Choose")}
+} else { alert("Great Choose")} }
 while ( prom < 8 || prom > 128);
 return prom;
 };
-
+var PasswordLength = getPasswordOptions();
 // Function for getting a random element from an array
 function getRandom(arr) {
 
