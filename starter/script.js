@@ -87,11 +87,18 @@ var upperCasedCharacters = [
   'Y',
   'Z'
 ];
+window.alert("Welcome to password generator")
+var prom = prompt("Choose the length of your passwords, it must be at least 8 characters short and less than 128 characters long");
 
 // Function to prompt user for password options
 function getPasswordOptions() {
-
-}
+if (prom < 8 ){
+  prompt("The password is less than 8 characters");
+} else if (prom > 128){
+  prompt("Password is greater than 128 characters");
+} else { alert("Great Choose")}
+return;
+};
 
 // Function for getting a random element from an array
 function getRandom(arr) {
@@ -116,3 +123,7 @@ function writePassword() {
 
 // Add event listener to generate button
 generateBtn.addEventListener('click', writePassword);
+
+
+
+
