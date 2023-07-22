@@ -139,14 +139,16 @@ function generatePassword(prom) {
   if (lowerC) allowedC += lowerCasedCharacters.join(""); //transformed to a string and concat to new generated string if anser is true
   if (numer) allowedC += numericCharacters.join("");
   if (upperC) allowedC += upperCasedCharacters.join("");
-  var password = "";
+  var password = ""; // variable that will store the passwords
   for (let i = 0; i < prom; i++) {
+    //using loop for generating password that would be equal with the user input, which in our case is prom
     randomC = Math.floor(Math.random() * allowedC.length);
     password += allowedC[randomC];
   }
   return password;
 }
-var generatedPassword = generatePassword(prom);
+
+var generatedPassword = generatePassword(prom); //generatedPassword will be equall to the result of generatePassword function and wiil store the result, and will be able to display in console
 console.log(generatedPassword);
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
