@@ -123,7 +123,7 @@ function getPasswordOptions() {
         "Click OK to confirm including uppercase characters"
       );
 
-      alert("Great Choice");
+      // alert("Great Choice");
       completed = true;
     }
   } while (!completed && (prom < 8 || prom > 128)); //will stop if this is false, will continue if is true till will be false
@@ -160,6 +160,6 @@ function writePassword() {
 
   passwordText.value = password;
 }
-
+writePassword();
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);

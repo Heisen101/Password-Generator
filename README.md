@@ -43,6 +43,7 @@ The application uses four arrays to store different sets of characters:
 3. Confirm whether you want to include special characters, numeric characters, lowercase characters, and uppercase characters in the password by clicking "OK" or "Cancel" for each prompt.
    ![second_promt](./assets/second_promt.png)
 4. After clicking "OK" on the last prompt, click the "Generate Password" button to create password with different criteria. a password based on your preferences and displayed it in the textarea.
+   ![button_generator](./assets/button_click_generator.png)
 
 ## Note
 
