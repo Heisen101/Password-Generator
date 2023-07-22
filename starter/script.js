@@ -112,7 +112,7 @@ function getPasswordOptions() {
       alert("The password is less than 8 characters");
     } else if (prom > 128) {
       //will execute if is true
-      alert("Password is greater than 128 characters");
+      alert("Password is greater than 129 characters");
     } else {
       charact = window.confirm(
         "Click OK to confirm including special characters"
