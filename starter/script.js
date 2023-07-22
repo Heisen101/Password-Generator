@@ -100,7 +100,7 @@ function getPasswordOptions() {
   //variable will store the true or false answer of user when choosing type of letters, characters etc.
   var prom; //declared var to store the answer from user
   do {
-    //Used do while loop for first to check the imput from customer and if is false to stop the loop if not, use will get prompts comments to choose the right password length
+    //Used do while loop for first to check the imput from customer and if is false to stop the loop if not, user will get prompts comments to choose the right password length
     prom = prompt(
       "Choose the length of your passwords, it must be at least 8 characters short and less than 128 characters long"
     );
@@ -124,7 +124,8 @@ function getPasswordOptions() {
         "Click OK to confirm including uppercase characters"
       );
       if (charact || numer || lowerC || upperC) {
-        atLeastOneOption = true;
+        //this will make user to choose at least one option, will get promts until has choosed an option
+        atLeastOneOption = true; //if the above condition is true than this variable is true and will execute the alert
         alert("Great Choice");
       } else {
         alert("You must select atleast one option");
