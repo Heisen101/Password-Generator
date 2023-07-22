@@ -87,7 +87,7 @@ var upperCasedCharacters = [
   "Y",
   "Z",
 ];
-var completed = false;
+
 var lowerC;
 var upperC;
 var numer; //will store the answer linked user choise regarding numbers
@@ -96,6 +96,7 @@ window.alert("Welcome to password generator");
 
 // Function to prompt user for password options
 function getPasswordOptions() {
+  var atLeastOneOption = false;
   //variable will store the true or false answer of user when choosing type of letters, characters etc.
   var prom; //declared var to store the answer from user
   do {
@@ -122,11 +123,15 @@ function getPasswordOptions() {
       upperC = window.confirm(
         "Click OK to confirm including uppercase characters"
       );
-
-      // alert("Great Choice");
-      completed = true;
+      if (charact || numer || lowerC || upperC) {
+        atLeastOneOption = true;
+        alert("Great Choice");
+      } else {
+        alert("You must select atleast one option");
+      }
     }
-  } while (!completed && (prom < 8 || prom > 128)); //will stop if this is false, will continue if is true till will be false
+  } while (!atLeastOneOption || prom < 8 || prom > 128); //will stop if this is false, will continue if is true till will be false
+
   return prom;
 }
 prom = getPasswordOptions();
@@ -160,6 +165,6 @@ function writePassword() {
 
   passwordText.value = password;
 }
-writePassword();
+writePassword(); //will display the password once the last promt is answered
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
