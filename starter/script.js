@@ -130,21 +130,26 @@ function getPasswordOptions() {
   return prom;
 }
 prom = getPasswordOptions();
-// console.log(lowerC);
-// console.log(upperC);
-// console.log(numer);
-// console.log(charact);
-var random1 = Math.floor(Math.random() * upperCasedCharacters.length);
-var randomL = upperCasedCharacters[random1];
-console.log(randomL);
+
 // Function for getting a random element from an array
-function getRandom() {
-  if ((lowerC = true)) {
-  }
-}
+// var passwordLength;
+// function getRandom() {
+//   do {
+//     if ((charact = true)) {
+//       randomC = Math.floor(Math.random() * specialCharacters.length);
+//       randomL = upperCasedCharacters[randomC];
+//     }
+//   } while ((passwordLength = prom));
+// }
+// passwordLength = getRandom();
+// console.log(passwordLength);
 
 // Function to generate password with user input
-function generatePassword() {}
+function generatePassword(passwordL) {
+  var allowedC = "";
+  if (charact) allowedC += specialCharacters.join("");
+  if (lowerC) allowedC += lowerCasedCharacters.join("");
+}
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
