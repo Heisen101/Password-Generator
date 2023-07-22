@@ -126,7 +126,7 @@ function getPasswordOptions() {
       alert("Great Choice");
       completed = true;
     }
-  } while (!completed && prom < 8 && prom > 128); //will stop if this is false, will continue if is true till will be false
+  } while (!completed && (prom < 8 || prom > 128)); //will stop if this is false, will continue if is true till will be false
   return prom;
 }
 prom = getPasswordOptions();
@@ -134,7 +134,6 @@ console.log(lowerC);
 console.log(upperC);
 console.log(numer);
 console.log(charact);
-var PasswordLength = getPasswordOptions();
 
 // Function for getting a random element from an array
 function getRandom(arr) {}
