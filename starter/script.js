@@ -151,6 +151,11 @@ function generatePassword(passwordL) {
   if (lowerC) allowedC += lowerCasedCharacters.join("");
   if (numer) allowedC += numericCharacters.join("");
   if (upperC) allowedC += upperC.join("");
+  var password = "";
+  for (i = 0; i < allowedC; i++) {
+    randomC = Math.floor(Math.random() * allowedC.length);
+    password += upperCasedCharacters[randomC];
+  }
 }
 
 // Get references to the #generate element
