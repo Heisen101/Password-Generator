@@ -1,7 +1,7 @@
 # Password Generator
 
 This is a [simple password generator application](https://heisen101.github.io/Password-Generator/) that allows users to generate random passwords based on their preferences. The application uses JavaScript to dynamically create a password based on the selected criteria, including password length, inclusion of special characters, numeric characters, lowercase, and uppercase characters.
- Accesing the [link](https://github.com/Heisen101/Password-Generator/blob/main/script.js) you could find the code repository 
+Here you could find the [code repository](https://github.com/Heisen101/Password-Generator/blob/main/script.js) 
 
 ## How it Works
 
