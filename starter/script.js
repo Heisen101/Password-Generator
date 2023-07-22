@@ -142,7 +142,7 @@ function generatePassword(prom) {
   var password = "";
   for (let i = 0; i < prom; i++) {
     randomC = Math.floor(Math.random() * allowedC.length);
-    password += upperCasedCharacters[randomC];
+    password += allowedC[randomC];
   }
   return password;
 }
