@@ -87,6 +87,7 @@ var upperCasedCharacters = [
   "Y",
   "Z",
 ];
+var completed = false;
 var lowerC;
 var upperC;
 var numer; //will store the answer linked user choise regarding numbers
@@ -122,9 +123,10 @@ function getPasswordOptions() {
         "Click OK to confirm including uppercase characters"
       );
 
-      alert("Great Choise");
+      alert("Great Choice");
+      completed = true;
     }
-  } while (prom < 8 || prom > 128); //will stop if this is false, will continue if is true till will be false
+  } while (!completed && prom < 8 && prom > 128); //will stop if this is false, will continue if is true till will be false
   return prom;
 }
 prom = getPasswordOptions();
