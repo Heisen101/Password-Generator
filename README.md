@@ -49,4 +49,8 @@ The application uses four arrays to store different sets of characters:
 
 This password generator is for educational purposes and may not meet all security requirements for real-world use. Always use secure passwords and consider using a reliable password manager for sensitive accounts.
 
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
 **Happy password generating!**
