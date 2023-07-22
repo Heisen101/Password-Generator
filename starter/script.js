@@ -96,7 +96,7 @@ window.alert("Welcome to password generator");
 
 // Function to prompt user for password options
 function getPasswordOptions() {
-  var atLeastOneOption = false;
+  var atLeastOneOption = false; //this variable will store the answer for at least one user option from promt messages
   //variable will store the true or false answer of user when choosing type of letters, characters etc.
   var prom; //declared var to store the answer from user
   do {
