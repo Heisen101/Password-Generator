@@ -104,7 +104,10 @@ function getPasswordOptions() {
     prom = prompt(
       "Choose the length of your passwords, it must be at least 8 characters short and less than 128 characters long"
     );
-    if (prom < 8) {
+    if (isNaN(prom)) {
+      //if user inserta a letter or other then a number, this will alert him to insert the righ format
+      alert("Please insert a valid number:");
+    } else if (prom < 8) {
       //will execute if is true
       alert("The password is less than 8 characters");
     } else if (prom > 128) {
@@ -148,7 +151,7 @@ function generatePassword(prom) {
   var password = ""; // variable that will store the passwords
   for (let i = 0; i < prom; i++) {
     //using loop for generating password that would be equal with the user input, which in our case is prom
-    randomC = Math.floor(Math.random() * allowedC.length);
+    randomC = Math.floor(Math.random() * allowedC.length); //math.floor will take the number to the base number as from 2.9 will make it 2, and math random will generate a number between 0 and 0.99,
     password += allowedC[randomC];
   }
   return password;
