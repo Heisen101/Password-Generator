@@ -149,6 +149,8 @@ function generatePassword(passwordL) {
   var allowedC = "";
   if (charact) allowedC += specialCharacters.join("");
   if (lowerC) allowedC += lowerCasedCharacters.join("");
+  if (numer) allowedC += numericCharacters.join("");
+  if (upperC) allowedC += upperC.join("");
 }
 
 // Get references to the #generate element
