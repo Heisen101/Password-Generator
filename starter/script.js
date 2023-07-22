@@ -130,13 +130,18 @@ function getPasswordOptions() {
   return prom;
 }
 prom = getPasswordOptions();
-console.log(lowerC);
-console.log(upperC);
-console.log(numer);
-console.log(charact);
-
+// console.log(lowerC);
+// console.log(upperC);
+// console.log(numer);
+// console.log(charact);
+var random1 = Math.floor(Math.random() * upperCasedCharacters.length);
+var randomL = upperCasedCharacters[random1];
+console.log(randomL);
 // Function for getting a random element from an array
-function getRandom(arr) {}
+function getRandom() {
+  if ((lowerC = true)) {
+  }
+}
 
 // Function to generate password with user input
 function generatePassword() {}
